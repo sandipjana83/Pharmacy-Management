@@ -1,0 +1,442 @@
+.ai-page {
+  min-height: 100vh;
+  background: var(--color-page);
+}
+
+.ai-content {
+  padding: var(--content-padding);
+}
+
+.ai-heading,
+.ai-title,
+.ai-trust-card,
+.ai-layout,
+.ai-side-heading,
+.suggested-question,
+.recent-conversation,
+.chat-message,
+.medicine-source-card,
+.answer-actions,
+.chat-composer {
+  display: flex;
+  align-items: center;
+}
+
+.ai-heading {
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.ai-title {
+  gap: var(--space-4);
+}
+
+.ai-robot-icon,
+.message-bot-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  background: #d9fbf4;
+  color: #0f9f96;
+}
+
+.ai-robot-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.ai-title h1 {
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: var(--text-3xl);
+}
+
+.ai-title p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.ai-trust-card {
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: #e9fbf7;
+  color: #148a68;
+}
+
+.ai-trust-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ai-trust-card strong {
+  font-size: var(--text-sm);
+}
+
+.ai-trust-card span {
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+}
+
+.ai-layout {
+  align-items: stretch;
+  gap: var(--space-4);
+}
+
+.ai-sidebar {
+  width: 340px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.ai-side-section,
+.recent-section {
+  padding: var(--space-5);
+}
+
+.recent-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.ai-side-heading {
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.ai-side-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: var(--text-base);
+}
+
+.ai-side-heading button {
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+}
+
+.suggested-list,
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.suggested-question {
+  width: 100%;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  color: var(--color-navy-800);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+.suggested-question:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+
+.chat-panel {
+  display: flex;
+  min-width: 0;
+  min-height: 650px;
+  flex: 1;
+  flex-direction: column;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.chat-messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-5);
+  overflow-y: auto;
+}
+
+.chat-message {
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.message-bot-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.message-content {
+  max-width: 82%;
+}
+
+.message-content > p {
+  margin: 0;
+  padding: 16px;
+  border-radius: 14px;
+  background: #eef4fa;
+  color: var(--color-navy-800);
+  line-height: 1.55;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.user-message .message-content > p {
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.message-content time {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+}
+
+.user-message time {
+  text-align: right;
+}
+
+.medicine-source-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.medicine-source-card {
+  min-width: 0;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid #d7eee9;
+  border-radius: var(--radius-md);
+  background: #f3fffb;
+  color: var(--color-navy-800);
+  cursor: pointer;
+  text-align: left;
+}
+
+.medicine-source-card > div {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.medicine-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  background: #d9fbf4;
+  color: #0f9f96;
+}
+
+.medicine-source-card strong {
+  overflow: hidden;
+  font-size: var(--text-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.medicine-source-card span,
+.medicine-source-card em {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.medicine-source-card small {
+  width: fit-content;
+  margin-top: 4px;
+  padding: 4px 7px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: var(--font-bold);
+}
+
+.medicine-source-card small.danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.medicine-source-card small.warning {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+.medicine-source-card small.success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.answer-actions {
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.view-report-button,
+.create-alert-button {
+  display: inline-flex;
+  height: 42px;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+}
+
+.view-report-button {
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.create-alert-button {
+  border: 1px solid var(--color-primary);
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.chat-composer {
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding: var(--space-2);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.chat-composer:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgb(22 135 249 / 12%);
+}
+
+.chat-composer input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+}
+
+.composer-icon,
+.send-button {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.composer-icon {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.send-button {
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.data-note {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-align: center;
+}
+
+@media (max-width: 1150px) {
+  .ai-layout {
+    flex-direction: column;
+  }
+
+  .ai-sidebar {
+    width: 100%;
+  }
+
+  .ai-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recent-section {
+    border-top: 0;
+    border-left: 1px solid var(--color-border);
+  }
+}
+
+@media (max-width: 760px) {
+  .ai-content {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .ai-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ai-trust-card {
+    width: 100%;
+  }
+
+  .ai-sidebar,
+  .medicine-source-list {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-section {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+  }
+
+  .chat-panel {
+    min-height: 550px;
+    padding: var(--space-4);
+  }
+
+  .message-content {
+    max-width: 92%;
+  }
+
+  .answer-actions {
+    flex-direction: column;
+  }
+
+  .view-report-button,
+  .create-alert-button {
+    justify-content: center;
+  }
+}

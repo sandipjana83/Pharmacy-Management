@@ -1,0 +1,26 @@
+.login-button {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #1687f9;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #0875df;
+  transform: translateY(-1px);
+}
+
+.login-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}

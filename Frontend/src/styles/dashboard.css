@@ -1,0 +1,13 @@
+.dashhboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.dashboard-header {
+  margin-bottom: 20px;
+}
+.dashboard-content {
+  width: 100%;
+  max-width: 800px;
+}
